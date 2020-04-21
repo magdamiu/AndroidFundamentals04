@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AndroidFundamentals04</string>
+    <string name="movie_name">Movie name</string>
+    <string name="save">Save</string>
+    <string name="oscar_winner">Oscar Winner</string>
+    <string name="budget">Budget ($)</string>
+    <string name="search_movies">Search movies...</string>
 </resources>
