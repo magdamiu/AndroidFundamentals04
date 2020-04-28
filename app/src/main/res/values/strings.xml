@@ -5,4 +5,11 @@
     <string name="oscar_winner">Oscar Winner</string>
     <string name="budget">Budget ($)</string>
     <string name="search_movies">Search movies...</string>
+    <string name="text">For developers, business decision makers, For developers, business decision makers, and enthusiasts in the apps and games industry the Apps, Games,</string>
+    <string name="fructe">Fructe</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="error_validate_email">Please fill the email address</string>
 </resources>
