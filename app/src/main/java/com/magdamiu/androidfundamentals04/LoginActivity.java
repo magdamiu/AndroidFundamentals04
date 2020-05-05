@@ -2,6 +2,7 @@ package com.magdamiu.androidfundamentals04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -43,6 +44,8 @@ public class LoginActivity extends AppCompatActivity {
 
         if (!email.isEmpty() && !phone.isEmpty() && terms.isChecked()) {
             Toast.makeText(this, email + " " + phone, Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(LoginActivity.this, EventsActivity.class);
+            startActivity(intent);
         }
     }
 
