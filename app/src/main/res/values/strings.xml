@@ -105,4 +105,5 @@
     <string name="action_settings">Settings</string>
     <string name="single_click">Single click</string>
     <string name="long_click">Long click</string>
+    <string name="colors">Colors</string>
 </resources>

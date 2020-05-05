@@ -1,4 +1,4 @@
-package com.magdamiu.androidfundamentals04;
+package com.magdamiu.androidfundamentals04.recycler_view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import com.magdamiu.androidfundamentals04.R;
 
 import java.util.ArrayList;
 import java.util.Date;

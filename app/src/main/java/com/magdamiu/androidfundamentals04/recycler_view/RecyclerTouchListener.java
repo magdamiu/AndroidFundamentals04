@@ -1,4 +1,4 @@
-package com.magdamiu.androidfundamentals04;
+package com.magdamiu.androidfundamentals04.recycler_view;
 
 import android.content.Context;
 import android.view.GestureDetector;
