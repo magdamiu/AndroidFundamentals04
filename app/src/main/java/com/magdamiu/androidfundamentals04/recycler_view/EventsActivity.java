@@ -1,6 +1,7 @@
 package com.magdamiu.androidfundamentals04.recycler_view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -31,6 +32,7 @@ public class EventsActivity extends AppCompatActivity {
         setLayoutManager(recyclerViewEvents);
         setAdapter(recyclerViewEvents);
         setRecyclerViewListener(recyclerViewEvents);
+        setItemDecoration(recyclerViewEvents);
     }
 
     private void getEvents() {
@@ -79,4 +81,9 @@ public class EventsActivity extends AppCompatActivity {
         }));
     }
 
+    private void setItemDecoration(RecyclerView recyclerView) {
+        RecyclerView.ItemDecoration itemDecoration = new
+                DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+        recyclerView.addItemDecoration(itemDecoration);
+    }
 }
