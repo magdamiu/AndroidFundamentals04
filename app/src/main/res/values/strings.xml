@@ -106,4 +106,6 @@
     <string name="single_click">Single click</string>
     <string name="long_click">Long click</string>
     <string name="colors">Colors</string>
+    <string name="call">Call</string>
+    <string name="open_link">Open link</string>
 </resources>

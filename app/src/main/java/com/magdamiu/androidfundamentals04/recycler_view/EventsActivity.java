@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 public class EventsActivity extends AppCompatActivity {
+    public static final String EVENT_ID = "eventId";
 
     private List<Event> events;
     private RecyclerView recyclerViewEvents;
@@ -62,6 +64,11 @@ public class EventsActivity extends AppCompatActivity {
             public void onClick(View view, final int position) {
                 Toast.makeText(EventsActivity.this, getString(R.string.single_click) + position,
                         Toast.LENGTH_SHORT).show();
+
+                Event event = events.get(position);
+                Intent intent = new Intent(EventsActivity.this, EventDetailsActivity.class);
+                intent.putExtra(EVENT_ID, event.getId());
+                startActivity(intent);
             }
 
             @Override

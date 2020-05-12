@@ -3,11 +3,20 @@ package com.magdamiu.androidfundamentals04.recycler_view;
 import java.util.Date;
 
 public class Event {
+    private String id;
     private String name;
     private Date startDate;
     private String address;
     private String description;
     private String urlImage;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -52,7 +61,8 @@ public class Event {
     @Override
     public String toString() {
         return "Event{" +
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", startDate=" + startDate +
                 ", address='" + address + '\'' +
                 ", description='" + description + '\'' +

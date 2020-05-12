@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.magdamiu.androidfundamentals04.activities.LifecycleTestActivity;
 import com.magdamiu.androidfundamentals04.custom_spinner.SpinnerActivity;
 import com.magdamiu.androidfundamentals04.recycler_view.EventsActivity;
 
@@ -31,5 +32,12 @@ public class FirstActivity extends AppCompatActivity {
 
     public void mainOnClick(View view) {
         startActivity(new Intent(FirstActivity.this, MainActivity.class));
+    }
+
+    public void lifecycleOnClick(View view) {
+        startActivity(new Intent(FirstActivity.this, LifecycleTestActivity.class));
+
+//        Intent intent = new Intent(FirstActivity.this, LifecycleTestActivity.class);
+//        startActivity(intent);
     }
 }
