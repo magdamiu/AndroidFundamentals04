@@ -115,4 +115,5 @@
     <string name="second_number">second number</string>
     <string name="the_sum_of_numbers_is">The sum of numbers is...</string>
     <string name="send_numbers">Send numbers</string>
+    <string name="dynamic_fragment_with_listener">Dynamic fragment with Listener</string>
 </resources>
