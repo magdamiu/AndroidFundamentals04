@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.magdamiu.androidfundamentals04.R;
@@ -35,5 +36,11 @@ public class ListenerFragmentActivity extends AppCompatActivity implements Andro
     public void sumOfTwoNumbers(int firstNumber, int secondNumber) {
         int sum = firstNumber + secondNumber;
         textViewResult.setText(sum + "");
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.e("Listener", "click on back");
     }
 }
