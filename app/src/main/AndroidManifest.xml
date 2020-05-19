@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".fragments.ParentDynamicFragmentActivity"></activity>
+        <activity android:name=".fragments.ListenerFragmentActivity"></activity>
+        <activity android:name=".fragments.ParentDynamicFragmentActivity" />
         <activity android:name=".fragments.ParentActivity" />
         <activity android:name=".activities.OnSaveInstanceActivity" />
         <activity android:name=".activities.ThirdActivity" />

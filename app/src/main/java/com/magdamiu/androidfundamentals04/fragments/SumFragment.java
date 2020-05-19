@@ -17,6 +17,7 @@ import com.magdamiu.androidfundamentals04.R;
 public class SumFragment extends Fragment {
 
     private TextView textViewSum;
+    private int firstNumber, secondNumber;
 
     public SumFragment() {
         // Required empty public constructor
@@ -30,16 +31,26 @@ public class SumFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_sum, container, false);
         textViewSum = view.findViewById(R.id.textViewSum);
 
-        getDataFromActivity();
-
+        //getDataFromActivity();
+        displaySum();
         return view;
     }
 
+    // get the data from bundle
     private void getDataFromActivity() {
-        // get the data from bundle
         Bundle bundle = getArguments();
         int firstNumber = bundle.getInt(ParentDynamicFragmentActivity.FIRST_NUMBER, 0);
         int secondNumber = bundle.getInt(ParentDynamicFragmentActivity.SECOND_NUMBER, 0);
+        int sum = firstNumber + secondNumber;
+        textViewSum.setText(sum + "");
+    }
+
+    public void setData(int firstNumber, int secondNumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+    }
+
+    private void displaySum() {
         int sum = firstNumber + secondNumber;
         textViewSum.setText(sum + "");
     }

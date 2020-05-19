@@ -63,4 +63,21 @@ public class ParentDynamicFragmentActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
     }
+
+    public void sendDataFromActivitytoFragmentOnClick(View view) {
+        // warning: make sure getText() does not return null
+        // and the content of edit texts is not empty
+        int firstNumber = Integer.valueOf(firstEditText.getText().toString());
+        int secondNumber = Integer.valueOf(secondEditText.getText().toString());
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        // use the setData method from fragment in order to send the data
+        SumFragment sumFragment = new SumFragment();
+        sumFragment.setData(firstNumber, secondNumber);
+
+        fragmentTransaction.replace(R.id.containerDynamicFragment, sumFragment);
+        fragmentTransaction.commit();
+    }
 }
