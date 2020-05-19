@@ -13,6 +13,7 @@ import com.magdamiu.androidfundamentals04.fragments.ListenerFragmentActivity;
 import com.magdamiu.androidfundamentals04.fragments.NavigationDrawerActivity;
 import com.magdamiu.androidfundamentals04.fragments.ParentActivity;
 import com.magdamiu.androidfundamentals04.fragments.ParentDynamicFragmentActivity;
+import com.magdamiu.androidfundamentals04.fragments.tabs.TabsActivity;
 import com.magdamiu.androidfundamentals04.recycler_view.EventsActivity;
 
 public class FirstActivity extends AppCompatActivity {
@@ -64,5 +65,9 @@ public class FirstActivity extends AppCompatActivity {
 
     public void openNavigationDrawerOnClick(View view) {
         startActivity(new Intent(FirstActivity.this, NavigationDrawerActivity.class));
+    }
+
+    public void tabsOnClick(View view) {
+        startActivity(new Intent(FirstActivity.this, TabsActivity.class));
     }
 }

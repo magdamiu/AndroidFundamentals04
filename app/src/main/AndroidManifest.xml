@@ -34,6 +34,9 @@
         <activity android:name=".recycler_view.EventsActivity" />
         <activity android:name=".custom_spinner.SpinnerActivity" />
         <activity android:name=".MainActivity" />
+        <activity
+            android:name=".fragments.tabs.TabsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

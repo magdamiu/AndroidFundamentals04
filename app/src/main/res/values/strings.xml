@@ -131,4 +131,19 @@
     <string name="gallery_fragment">Gallery fragment</string>
     <string name="home_fragment">Home fragment</string>
     <string name="slideshow_fragment">Slideshow fragment</string>
+    <string name="tab_1">TAB 1</string>
+    <string name="tab_2">TAB 2</string>
+    <string name="tab_3">TAB 3</string>
+    <string name="tab_label1">"Tab 1 "</string>
+    <string name="tab_label2">Tab 2</string>
+    <string name="tab_label3">Tab 3</string>
+    <string name="tabs">Tabs</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="dynamic_fragment">Dynamic Fragment</string>
+    <string name="fragment">Fragment</string>
+    <string name="on_save_instance_state">On Save Instance State</string>
+    <string name="lifecycle_activity">Lifecycle Activity</string>
+    <string name="main_activity">Main activity</string>
+    <string name="spinner_cu_font">Spinner cu font</string>
+    <string name="events">Events</string>
 </resources>
