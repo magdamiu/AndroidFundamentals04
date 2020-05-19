@@ -108,4 +108,10 @@
     <string name="colors">Colors</string>
     <string name="call">Call</string>
     <string name="open_link">Open link</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_number">first number</string>
+    <string name="second_number">second number</string>
+    <string name="the_sum_of_numbers_is">The sum of numbers is...</string>
 </resources>

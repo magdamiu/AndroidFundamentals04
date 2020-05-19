@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.magdamiu.androidfundamentals04.activities.LifecycleTestActivity;
+import com.magdamiu.androidfundamentals04.activities.OnSaveInstanceActivity;
 import com.magdamiu.androidfundamentals04.custom_spinner.SpinnerActivity;
+import com.magdamiu.androidfundamentals04.fragments.ParentActivity;
+import com.magdamiu.androidfundamentals04.fragments.ParentDynamicFragmentActivity;
 import com.magdamiu.androidfundamentals04.recycler_view.EventsActivity;
 
 public class FirstActivity extends AppCompatActivity {
@@ -39,5 +42,17 @@ public class FirstActivity extends AppCompatActivity {
 
 //        Intent intent = new Intent(FirstActivity.this, LifecycleTestActivity.class);
 //        startActivity(intent);
+    }
+
+    public void onSaveInstanceStateOnClick(View view) {
+        startActivity(new Intent(FirstActivity.this, OnSaveInstanceActivity.class));
+    }
+
+    public void openFragmentInActivityOnClick(View view) {
+        startActivity(new Intent(FirstActivity.this, ParentActivity.class));
+    }
+
+    public void openDynamicFragmentInActivityOnClick(View view) {
+        startActivity(new Intent(FirstActivity.this, ParentDynamicFragmentActivity.class));
     }
 }
