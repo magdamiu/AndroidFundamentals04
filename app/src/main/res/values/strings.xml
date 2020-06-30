@@ -146,4 +146,8 @@
     <string name="main_activity">Main activity</string>
     <string name="spinner_cu_font">Spinner cu font</string>
     <string name="events">Events</string>
+    <string name="cardview_and_styles">CardView and Styles</string>
+    <string name="error_occured">Error</string>
+    <string name="retry">Retry</string>
+    <string name="retry_message">Please try again</string>
 </resources>
