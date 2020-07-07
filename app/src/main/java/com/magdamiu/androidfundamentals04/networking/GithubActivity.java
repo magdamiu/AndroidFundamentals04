@@ -12,7 +12,7 @@ import java.util.List;
 
 public class GithubActivity extends AppCompatActivity {
 
-    private String token = "3c55c5ad877a76f3558b8fe2e07a0626592d24b2";
+    private String token = " ";
 
     private UsersRepository usersRepository;
     private IssuesRepository issuesRepository;
@@ -52,7 +52,7 @@ public class GithubActivity extends AppCompatActivity {
         issue.setBody("let's learn retrofit");
         // replace your_code with your token from github
         String fullToken = "token " + token;
-        postIssue("miualinionut", "java-design-patterns", fullToken, issue);
+        postIssue("magdamiu", "AndroidFundamentals04", fullToken, issue);
     }
 
     private void postIssue(String user, String repo, String token, Issue issue) {
