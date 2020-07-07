@@ -12,7 +12,7 @@ import java.util.List;
 
 public class GithubActivity extends AppCompatActivity {
 
-    private String token = "18e068d7b2171d4fc250b08fed13ce727a28188a";
+    private String token = "3c55c5ad877a76f3558b8fe2e07a0626592d24b2";
 
     private UsersRepository usersRepository;
     private IssuesRepository issuesRepository;
@@ -33,7 +33,7 @@ public class GithubActivity extends AppCompatActivity {
             @Override
             public void onSuccess(List<User> users) {
                 StringBuilder stringBuilder = new StringBuilder();
-                for(User user: users) {
+                for (User user : users) {
                     stringBuilder.append(user.toString() + " /n ");
                 }
                 Toast.makeText(GithubActivity.this, stringBuilder.toString(), Toast.LENGTH_LONG).show();
@@ -41,7 +41,7 @@ public class GithubActivity extends AppCompatActivity {
 
             @Override
             public void onError() {
-                  Toast.makeText(GithubActivity.this, "NOT OK", Toast.LENGTH_LONG).show();
+                Toast.makeText(GithubActivity.this, "NOT OK", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -50,7 +50,9 @@ public class GithubActivity extends AppCompatActivity {
         Issue issue = new Issue();
         issue.setTitle("new issue july 7th");
         issue.setBody("let's learn retrofit");
-        postIssue("magdamiu", "AndroidFundamentals04", token, issue);
+        // replace your_code with your token from github
+        String fullToken = "token " + token;
+        postIssue("miualinionut", "java-design-patterns", fullToken, issue);
     }
 
     private void postIssue(String user, String repo, String token, Issue issue) {
