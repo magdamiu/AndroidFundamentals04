@@ -2,6 +2,7 @@ package com.magdamiu.androidfundamentals04.networking;
 
 import com.google.gson.annotations.SerializedName;
 
+// POJO = Plain Old Java Object
 public class User {
     @SerializedName("login")
     private String username;
