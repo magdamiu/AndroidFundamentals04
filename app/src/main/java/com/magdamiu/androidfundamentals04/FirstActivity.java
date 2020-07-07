@@ -14,6 +14,7 @@ import com.magdamiu.androidfundamentals04.fragments.NavigationDrawerActivity;
 import com.magdamiu.androidfundamentals04.fragments.ParentActivity;
 import com.magdamiu.androidfundamentals04.fragments.ParentDynamicFragmentActivity;
 import com.magdamiu.androidfundamentals04.fragments.tabs.TabsActivity;
+import com.magdamiu.androidfundamentals04.networking.GithubActivity;
 import com.magdamiu.androidfundamentals04.recycler_view.EventsActivity;
 import com.magdamiu.androidfundamentals04.styles.StylesActivity;
 
@@ -74,5 +75,9 @@ public class FirstActivity extends AppCompatActivity {
 
     public void stylesOnClick(View view) {
         startActivity(new Intent(FirstActivity.this, StylesActivity.class));
+    }
+
+    public void githubUsersOnClick(View view) {
+        startActivity(new Intent(FirstActivity.this, GithubActivity.class));
     }
 }

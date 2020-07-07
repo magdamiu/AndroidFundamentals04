@@ -150,4 +150,5 @@
     <string name="error_occured">Error</string>
     <string name="retry">Retry</string>
     <string name="retry_message">Please try again</string>
+    <string name="networking_github_users">Networking - Github users</string>
 </resources>
