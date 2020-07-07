@@ -23,11 +23,7 @@ public class UsersRepository {
 
     public static UsersRepository getInstance() {
         if (usersRepository == null) {
-            Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(BuildConfig.BASE_GITHUB_API)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-
+            Retrofit retrofit = RetrofitClient.getRetrofitClient();
             usersRepository = new UsersRepository(retrofit.create(GithubApi.class));
         }
 

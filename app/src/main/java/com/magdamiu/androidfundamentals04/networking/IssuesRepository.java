@@ -19,11 +19,7 @@ public class IssuesRepository {
 
     public static IssuesRepository getInstance() {
         if (issuesRepository == null) {
-            Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(BuildConfig.BASE_GITHUB_API)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-
+            Retrofit retrofit = RetrofitClient.getRetrofitClient();
             issuesRepository = new IssuesRepository(retrofit.create(GithubApi.class));
         }
 
